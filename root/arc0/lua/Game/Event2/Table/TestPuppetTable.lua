@@ -1,0 +1,80 @@
+local L1_1
+L0_0 = {}
+L1_1 = {
+  "man01",
+  "man02",
+  "man03",
+  "man04",
+  "man05",
+  "man06",
+  "man07",
+  "man08",
+  "man09",
+  "man10",
+  "man11",
+  "man12",
+  "man13",
+  "man14",
+  "man15",
+  "man16",
+  "man17",
+  "man18",
+  "man19",
+  "man20",
+  "man21",
+  "man22",
+  "man23",
+  "man24",
+  "man25",
+  "man26",
+  "man27",
+  "man28",
+  "man29",
+  "man30",
+  "man31",
+  "man32",
+  "man33",
+  "man36",
+  "miz01",
+  "phi01",
+  "tkg01"
+}
+L0_0.man01 = L1_1
+L1_1 = {
+  "wom01",
+  "wom02",
+  "wom03",
+  "wom04",
+  "wom05",
+  "wom06",
+  "wom07",
+  "wom08",
+  "wom09",
+  "wom10",
+  "wom11",
+  "wom12",
+  "wom13",
+  "wom14",
+  "wom15",
+  "wom16",
+  "wom17",
+  "wom25",
+  "wom28",
+  "sis01"
+}
+L0_0.wom01 = L1_1
+L1_1 = {
+  "chi01",
+  "chi02",
+  "chi03",
+  "chi04",
+  "chi05",
+  "chi06",
+  "chi07",
+  "chi08",
+  "chi09",
+  "chi10",
+  "cid01"
+}
+L0_0.chi01 = L1_1
+test_puppet = L0_0

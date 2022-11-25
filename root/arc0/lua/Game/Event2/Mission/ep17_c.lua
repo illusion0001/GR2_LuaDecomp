@@ -1,0 +1,43 @@
+dofile("/Game/Event2/Common/EventCommon.lua")
+dofile("/Game/Event2/Mission/ep17_common.lua")
+dofile("/Game/Event2/Mission/mv_common.lua")
+function Initialize()
+  local L0_0, L1_1
+end
+function Ingame()
+  Fn_missionStart()
+  Player:setStay(false)
+  Fn_userCtrlOn()
+  invokeTask(function()
+    while not Fn_sendEventComSb("checkMissionRetry") do
+      wait()
+    end
+    Fn_sendEventComSb("resetMissionRetry")
+    Fn_missionRetry()
+  end)
+  Fn_sendEventComSb("requestSection", "c1")
+  waitComNextPhase()
+  invokeTask(function()
+    Fn_missionViewWait("ep17_02000")
+  end)
+  Fn_sendEventComSb("requestSection", "c2")
+  waitComNextPhase()
+  Fn_sendEventComSb("requestSection", "c3")
+  waitComNextPhase()
+  Fn_kaiwaDemoView("ep17_00245k")
+  invokeTask(function()
+    Fn_missionViewWait("ep17_02001")
+  end)
+  Fn_sendEventComSb("requestSection", "c4")
+  waitComNextPhase()
+  Fn_sendEventComSb("requestSection", "c6")
+  waitComNextPhase()
+  Fn_kaiwaDemoView("ep17_00260k")
+  Fn_setKeepPlayerPos()
+  Fn_setNextMissionFlag()
+  Fn_nextMission()
+  Fn_exitSandbox()
+end
+function Finalize()
+  local L0_2, L1_3
+end

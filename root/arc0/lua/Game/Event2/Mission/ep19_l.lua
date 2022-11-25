@@ -1,0 +1,40 @@
+dofile("/Game/Event2/Common/EventCommon.lua")
+dofile("/Game/Event2/Mission/ep19_common.lua")
+function Initialize()
+  Fn_userCtrlOff()
+  Player:setAttrTune(Player.kAttrTune_Jupiter, true)
+end
+function Ingame()
+  Fn_sendEventComSb("requestGhostCrowReplayStart")
+  Fn_sendEventComSb("requestAnotherKittenSpawn", "locator2_a_kitten_start_pos_ep19_l")
+  repeat
+    wait()
+  until Fn_sendEventComSb("requestAnotherKittenSpawnEnd")
+  Fn_sendEventComSb("requestAnotherKittenWarp", "locator2_a_kitten_start_pos_ep19_l")
+  wait(30)
+  Fn_sendEventComSb("requestAnotherKittenReleaseIdle")
+  Fn_sendEventComSb("requestAnotherKittenMove", "locator2_a_kitten_move_pos_ep19_l", nil, 25)
+  Fn_sendEventComSb("requestJemActive")
+  Fn_setCatWarpCheckPoint("locator2_restart_pos_ep19_l")
+  Fn_missionStart()
+  Fn_captionViewWait("ep19_12000")
+  Fn_sendEventComSb("lithographStart")
+  repeat
+    wait()
+  until Fn_sendEventComSb("isLithographStart")
+  Fn_sendEventComSb("setFirstHalfProcessEnd")
+  repeat
+    wait()
+  until Fn_sendEventComSb("isFirstHalfProcessEnd")
+  Fn_userCtrlOff()
+  waitSeconds(2)
+  Fn_lookAtObject("locator2_aim_01"):abort()
+  Fn_kaiwaDemoView("ep19_00410k")
+  Fn_setKeepPlayerPos()
+  Fn_setNextMissionFlag()
+  Fn_nextMission()
+  Fn_exitSandbox()
+end
+function Finalize()
+  local L0_0, L1_1
+end

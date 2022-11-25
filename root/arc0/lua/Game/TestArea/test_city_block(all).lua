@@ -1,0 +1,6 @@
+import("GameDatabase")
+GameDatabase:set(ggd.Debug__TitleSkip, true)
+GameDatabase:set(ggd.Debug__StartMission, "city_block_all")
+GameDatabase:set(ggd.Debug__PlayerStartPos, Vector(-78.52, 20.35, 153.12))
+GameDatabase:set(ggd.Debug__PlayerStartArea, "po_a_01")
+dofile("/Game/LaunchScript/root.lua")

@@ -1,0 +1,46 @@
+L0_0 = {
+  {
+    {
+      "ft91",
+      1,
+      1800
+    },
+    {
+      "le00",
+      7200,
+      2,
+      LIVELY_POSITIVE_EVENT
+    },
+    {
+      "le01",
+      3000,
+      10,
+      LIVELY_POSITIVE_EVENT
+    },
+    {
+      "le03",
+      3000,
+      10,
+      LIVELY_POSITIVE_EVENT
+    },
+    {
+      "le04",
+      3000,
+      10,
+      LIVELY_POSITIVE_EVENT
+    }
+  },
+  {
+    {
+      "ft05",
+      1,
+      1
+    },
+    {
+      "le06",
+      10,
+      100
+    }
+  }
+}
+lively_event_table = L0_0

@@ -1,0 +1,27 @@
+local L1_1
+L0_0 = {}
+L1_1 = {}
+L1_1.rand = 0.5
+L1_1.sign = 0.5
+L1_1.max_a = 1
+L1_1.min_a = 0.5
+L1_1.max_t = 30
+L1_1.min_t = 10
+L0_0.xz = L1_1
+L1_1 = {}
+L1_1.rand = 0.5
+L1_1.sign = 0.85
+L1_1.max_a = 1
+L1_1.min_a = 0.3
+L1_1.max_t = 60
+L1_1.min_t = 30
+L0_0.y = L1_1
+L1_1 = {}
+L1_1.rand = 0.5
+L1_1.sign = 0.5
+L1_1.max_a = 0
+L1_1.min_a = 0
+L1_1.max_t = 120
+L1_1.min_t = 30
+L0_0.angle = L1_1
+DRIFT_PARAM_ANOTHER_ZONE_05_B = L0_0

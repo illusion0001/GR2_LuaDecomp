@@ -1,0 +1,113 @@
+L0_0 = {}
+L0_0.gmarmf01 = {
+  {
+    "bn_gm_armarea_a_f_01",
+    "gm_armarea_a"
+  },
+  {
+    "bn_gm_armarea_b_f_01",
+    "gm_armarea_b"
+  },
+  {
+    "bn_gm_armarea_a_f_02",
+    "gm_armarea_a"
+  },
+  {
+    "bn_gm_armarea_b_f_02",
+    "gm_armarea_b"
+  },
+  {
+    "bn_gm_armarea_a_f_03",
+    "gm_armarea_a"
+  },
+  {
+    "bn_gm_armarea_b_f_03",
+    "gm_armarea_b"
+  }
+}
+L0_0.gmarml01 = {
+  {
+    "bn_gm_armarea_a_l_01",
+    "gm_armarea_a"
+  },
+  {
+    "bn_gm_armarea_b_l_01",
+    "gm_armarea_b"
+  },
+  {
+    "bn_gm_armarea_a_l_02",
+    "gm_armarea_a"
+  },
+  {
+    "bn_gm_armarea_b_l_02",
+    "gm_armarea_b"
+  },
+  {
+    "bn_gm_armarea_a_l_03",
+    "gm_armarea_a"
+  },
+  {
+    "bn_gm_armarea_b_l_03",
+    "gm_armarea_b"
+  },
+  {
+    "bn_gm_armarea_a_l_04",
+    "gm_armarea_a"
+  },
+  {
+    "bn_gm_armarea_b_l_04",
+    "gm_armarea_b"
+  }
+}
+L0_0.gmarmr01 = {
+  {
+    "bn_gm_armarea_a_r_01",
+    "gm_armarea_a"
+  },
+  {
+    "bn_gm_armarea_b_r_01",
+    "gm_armarea_b"
+  },
+  {
+    "bn_gm_armarea_a_r_02",
+    "gm_armarea_a"
+  },
+  {
+    "bn_gm_armarea_b_r_02",
+    "gm_armarea_b"
+  },
+  {
+    "bn_gm_armarea_a_r_03",
+    "gm_armarea_a"
+  },
+  {
+    "bn_gm_armarea_b_r_03",
+    "gm_armarea_b"
+  },
+  {
+    "bn_gm_armarea_a_r_04",
+    "gm_armarea_a"
+  },
+  {
+    "bn_gm_armarea_b_r_04",
+    "gm_armarea_b"
+  }
+}
+L0_0.gmbody01 = {
+  {
+    "bn_gm_a_root_01",
+    "gm_bodyarea_b"
+  }
+}
+gm_list = L0_0
+L0_0 = {
+  "gm_move_a_01",
+  "gm_move_a_02",
+  "gm_move_a_03",
+  "gm_move_a_04",
+  "gm_move_a_05",
+  "gm_move_a_06"
+}
+gm_body_part_list = L0_0
+L0_0 = {}
+gm_sensor_size = L0_0

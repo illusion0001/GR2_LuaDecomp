@@ -1,0 +1,104 @@
+dofile("/Game/Event2/Common/EventCommon.lua")
+dofile("/Game/Event2/Common/RaceCommon.lua")
+function Initialize()
+  local L0_0, L1_1, L2_2
+  L0_0 = Fn_setCatWarp
+  L1_1 = false
+  L0_0(L1_1)
+  L0_0 = {
+    L1_1,
+    L2_2,
+    {
+      name = "locator2_arrow_03",
+      start_cp = 4,
+      end_cp = 6
+    },
+    {
+      name = "locator2_arrow_04",
+      start_cp = 6,
+      end_cp = 8,
+      atr = "small"
+    },
+    {
+      name = "locator2_arrow_05",
+      start_cp = 7,
+      end_cp = 8,
+      atr = "small"
+    }
+  }
+  L1_1 = {}
+  L1_1.name = "locator2_arrow_01"
+  L1_1.start_cp = 0
+  L1_1.end_cp = 2
+  L1_1.atr = "small"
+  L2_2 = {}
+  L2_2.name = "locator2_arrow_02"
+  L2_2.start_cp = 1
+  L2_2.end_cp = 3
+  L2_2.atr = "small"
+  L1_1 = Fn_setArrowTable
+  L2_2 = L0_0
+  L1_1(L2_2)
+  L1_1 = {
+    L2_2,
+    {
+      name = "locator2_cp_02"
+    },
+    {
+      name = "locator2_cp_03"
+    },
+    {
+      name = "locator2_cp_04"
+    },
+    {
+      name = "locator2_cp_05"
+    },
+    {
+      name = "locator2_cp_06",
+      opt = {marker = "air"}
+    },
+    {
+      name = "locator2_cp_07",
+      opt = {marker = "ground"}
+    },
+    {
+      name = "locator2_cp_08",
+      opt = {marker = "goal"}
+    }
+  }
+  L2_2 = {}
+  L2_2.name = "locator2_cp_01"
+  L2_2 = Fn_setCheckPointTable
+  L2_2(L1_1, {
+    size = Vector(3, 3, 3)
+  })
+  L2_2 = {}
+  L2_2.counter = {
+    max = #L1_1
+  }
+  Fn_challengeInitialize(L2_2)
+  Fn_setAreaWarp("po_a_15", "locator2_po_a_15")
+end
+function Ingame()
+  local L0_3
+  L0_3 = Player
+  L0_3 = L0_3.setEnergy
+  L0_3(L0_3, Player.kEnergy_Gravity, Player:getEnergyMax(Player.kEnergy_Gravity))
+  L0_3 = Player
+  L0_3 = L0_3.setAttrTune
+  L0_3(L0_3, Player.kAttrTune_Normal, true)
+  L0_3 = Player
+  L0_3 = L0_3.setStay
+  L0_3(L0_3, false)
+  L0_3 = {}
+  L0_3.timer = true
+  L0_3.counter = true
+  Fn_challengeStart(L0_3, nil, true)
+  Fn_runCheckPoint()
+  waitSeconds(0.5)
+  Player:setStay(true)
+  Fn_challengeFinish()
+end
+function Finalize()
+  Fn_challengeFinalize()
+end

@@ -1,0 +1,5 @@
+import("GameDatabase")
+GameDatabase:set(ggd__Debug__StartMission, "ft91")
+GameDatabase:set(ggd__Debug__ForceLevelMax, true)
+GameDatabase:set(ggd__Debug__SmAllClear, true)
+dofile("/Game/LaunchScript/root.lua")
